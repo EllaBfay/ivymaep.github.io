@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Ivy Mae Photography</title> <!--this is the title of the TAB in the browser -->
+        <link rel="stylesheet" href="/Users/ellabeaumont-fay/Desktop/Web Design 1 /Assessment 3/style3.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+            </style>            
+    </head>
+
+    <body>
+        <header>
+        <div class="navbar">
+            <div class="logo"><img src="/Users/ellabeaumont-fay/Desktop/Web Design 1 /Assessment 3/images/ivy-mae-logo(2).png" alt=""></div>
+            
+                <ul class="links">
+                    <a href="#About">About</a> <!--active links-->
+                    <a href="#Gallery">Gallery</a>
+                    <a href="#Contact Me!">Contact</a>
+                    </ul>
+               
+                <a href="#" class="action_btn">Quote</a>
+
+               <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i></div>
+               </div>
+
+              <div class="dropdown_menu">
+                    <a href="About">About</a>
+                    <a href="Gallery">Gallery</a>
+                    <a href="Contact">Contact</a>
+                    <a href="#" class="action_btn">Quote</a> 
+              </div>
+        
+                
+            </header>
+            <main>
+                <section id="hero">
+                    <h1>Ivy Mae Photography</h1>
+                </section>
+            </main>
+            
+            <script>
+                const toggleBtn=document. querySelector(".toggle_btn")
+                const toggleBtnIcon=document. querySelector(".toggle_btn i")
+                const dropDownMenu=document. querySelector(".dropdown_menu")
+
+                toggleBtn.onclick=function (){
+                dropDownMenu.classList.toggle("open")
+                const isOpen=dropDownMenu.classList.contains("open")
+               
+                }
+            </script>
+            
+
+           
+           
+            <div class="container">
+
+            
+            </div>
+
+           <div class="about"><h2 id="About">About</h2></div>
+
+        
+            <div class="abouttext">
+            <p>
+                Hi! My name is Ivy Mae and I'm an aspiring photographer who works mostly in editorial and fashion photography.
+                I am 21 years old and I fell in love with photography when I was 16 in highschool. I bought my first 
+                digital camera in year 10 and took photos of everything. I am looking to work for small upcoming businesses that 
+                want to promote their products and services. My main interest is in editorial, fashion and product 
+                photograpy such as seen in my image gallery below!
+
+            </p>
+           </div>
+
+             
+             <h5 id="Gallery">Gallery</h5>
+             <div class="slidecontainer">
+                <span class="slider-span" id="slider-span1"></span>
+                <span class="slider-span" id="slider-span2"></span>
+                <span class="slider-span" id="slider-span3"></span>
+                <span class="slider-span" id="slider-span4"></span>
+                <span class="slider-span" id="slider-span5"></span>
+                <span class="slider-span" id="slider-span6"></span>
+                <span class="slider-span" id="slider-span7"></span>
+                
+                
+                
+                
+
+                <div class="image-slider">
+                    <div class="slides-div" id="slide-1">
+                <img src="/Users/ellabeaumont-fay/Desktop/Web Design 1 /Assessment 3/images/ocean.jpeg" alt="" class="img" id="img1">
+                    <a href="#slider-span1" class="button" id="button1"></a>
+                </div>
+
+                    <div class="slides-div" id="slide-2">
+                    <img src="/Users/ellabeaumont-fay/Desktop/Web Design 1 /Assessment 3/images/building.jpeg" alt="" class="img" id="img2">
+                    <a href="#slider-span2" class="button" id="button2"></a>
+                </div>
+
+                    <div class="slides-div" id="slide-3">
+                    <img src="/Users/ellabeaumont-fay/Desktop/Web Design 1 /Assessment 3/images/model.jpeg" alt="" class="img" id="img3">
+                    <a href="#slider-span3" class="button" id="button3"></a>
+                </div>
+
+
+                    <div class="slides-div" id="slide-4">
+                    <img src="/Users/ellabeaumont-fay/Desktop/Web Design 1 /Assessment 3/images/product.png" alt="" class="img" id="img4">
+                    <a href="#slider-span4" class="button" id="button4"></a>
+                </div>
+                
+                <div class="slides-div" id="slide-5">
+                    <img src="/Users/ellabeaumont-fay/Desktop/Web Design 1 /Assessment 3/images/ground.jpeg" alt="" class="img" id="img5">
+                    <a href="#slider-span5" class="button" id="button5"></a>
+                </div>
+
+                <div class="slides-div" id="slide-6">
+                    <img src="/Users/ellabeaumont-fay/Desktop/Web Design 1 /Assessment 3/images/boat.jpeg" alt="" class="img" id="img6">
+                    <a href="#slider-span6" class="button" id="button6"></a>
+                </div>
+
+                <div class="slides-div" id="slide-7">
+                    <img src="/Users/ellabeaumont-fay/Desktop/Web Design 1 /Assessment 3/images/oranges.jpeg" alt="" class="img" id="img6">
+                    <a href="#slider-span7" class="button" id="button7"></a>
+                </div>
+                
+
+            <!--contact page-->
+            
+             <div class="contact-box">
+                <div>
+            <h4 id="Contact Me!">Contact Me!</h4>
+                <form>
+                    <input type="text" class="input-field" placeholder="Your Name">
+                    <input type="email" class="input-field" placeholder="Your Email">
+                    <input type="text" class="input-field" placeholder="Subject">
+                    <textarea type="text" class="input-field textarea-field" placeholder="Your Message"></textarea>
+                    <button type="button" class="btn">Send Message</button>
+                </form>
+                
+               
+             
+             </div>
+
+             
+               
+             
+                
+               
+                </div>
+            
+             </div>
+
+             
+
+             <footer>
+                <div class="footer-content">
+                    <h3> Ivy Mae Photography Info</h3>
+                    <p>
+                        Designed by Ella Beaumont-Fay. Curtin University, Web Design 1. Copyright.
+                    </p>
+        
+                </div>
+                <div class="footer-bottom">
+                    <p> copright &copy2023 Ella Beaumont-Fay</p>
+                </div>
+             </footer>
+
+                
+        
+        </body>
+        
+        
+      
+
+
+   </html>
+
+   
